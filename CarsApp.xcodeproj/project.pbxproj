@@ -1,0 +1,596 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AD4AC07E178E0F6900393C59 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD4AC07D178E0F6900393C59 /* MapKit.framework */; };
+		AD4AC080178E0F7800393C59 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD4AC07F178E0F7800393C59 /* AddressBook.framework */; };
+		AD55669C178C673900D7C926 /* chevy_volt.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AD556697178C673900D7C926 /* chevy_volt.jpg */; };
+		AD55669D178C673900D7C926 /* mini_clubman.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AD556698178C673900D7C926 /* mini_clubman.jpg */; };
+		AD55669E178C673900D7C926 /* smart_fortwo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AD556699178C673900D7C926 /* smart_fortwo.jpg */; };
+		AD55669F178C673900D7C926 /* toyota_venza.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AD55669A178C673900D7C926 /* toyota_venza.jpg */; };
+		AD5566A0178C673900D7C926 /* volvo_s60.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AD55669B178C673900D7C926 /* volvo_s60.jpg */; };
+		AD5566A4178C7AFF00D7C926 /* CarDetailTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD5566A3178C7AFF00D7C926 /* CarDetailTableViewController.m */; };
+		AD5A698C178C623600684488 /* CarsTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AD5A698B178C623600684488 /* CarsTableCell.m */; };
+		EF4003AA178C523E001F62DD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF4003A9178C523E001F62DD /* Foundation.framework */; };
+		EF4003AC178C523E001F62DD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF4003AB178C523E001F62DD /* CoreGraphics.framework */; };
+		EF4003AE178C523E001F62DD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF4003AD178C523E001F62DD /* UIKit.framework */; };
+		EF4003B4178C523E001F62DD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EF4003B2178C523E001F62DD /* InfoPlist.strings */; };
+		EF4003B6178C523E001F62DD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EF4003B5178C523E001F62DD /* main.m */; };
+		EF4003BA178C523E001F62DD /* CarsAppAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EF4003B9178C523E001F62DD /* CarsAppAppDelegate.m */; };
+		EF4003BD178C523E001F62DD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF4003BB178C523E001F62DD /* Main.storyboard */; };
+		EF4003C2178C523E001F62DD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF4003C1178C523E001F62DD /* Images.xcassets */; };
+		EF4003C9178C523E001F62DD /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF4003C8178C523E001F62DD /* XCTest.framework */; };
+		EF4003CA178C523E001F62DD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF4003A9178C523E001F62DD /* Foundation.framework */; };
+		EF4003CB178C523E001F62DD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF4003AD178C523E001F62DD /* UIKit.framework */; };
+		EF4003D3178C523E001F62DD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EF4003D1178C523E001F62DD /* InfoPlist.strings */; };
+		EF4003D5178C523E001F62DD /* CarsAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EF4003D4178C523E001F62DD /* CarsAppTests.m */; };
+		EF4003E2178C5857001F62DD /* display-mac32.png in Resources */ = {isa = PBXBuildFile; fileRef = EF4003DE178C5857001F62DD /* display-mac32.png */; };
+		EF4003E3178C5857001F62DD /* home32.png in Resources */ = {isa = PBXBuildFile; fileRef = EF4003DF178C5857001F62DD /* home32.png */; };
+		EF4003E4178C5857001F62DD /* thumbnails32.png in Resources */ = {isa = PBXBuildFile; fileRef = EF4003E0178C5857001F62DD /* thumbnails32.png */; };
+		EF4003E5178C5857001F62DD /* unfold-multiple32.png in Resources */ = {isa = PBXBuildFile; fileRef = EF4003E1178C5857001F62DD /* unfold-multiple32.png */; };
+		EF4003E8178C59CB001F62DD /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF4003E7178C59CB001F62DD /* LoginViewController.m */; };
+		EF4003ED178C5A1B001F62DD /* CarsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF4003EC178C5A1B001F62DD /* CarsTableViewController.m */; };
+		EF4003F0178C5A59001F62DD /* CarsMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF4003EF178C5A59001F62DD /* CarsMapViewController.m */; };
+		EF4003F3178C5A70001F62DD /* CarsPhotosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF4003F2178C5A70001F62DD /* CarsPhotosViewController.m */; };
+		EF4003F6178C5A8B001F62DD /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF4003F5178C5A8B001F62DD /* SettingsViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EF4003CC178C523E001F62DD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EF40039E178C523E001F62DD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EF4003A5178C523E001F62DD;
+			remoteInfo = CarsApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AD4AC07D178E0F6900393C59 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/MapKit.framework; sourceTree = DEVELOPER_DIR; };
+		AD4AC07F178E0F7800393C59 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/AddressBook.framework; sourceTree = DEVELOPER_DIR; };
+		AD556697178C673900D7C926 /* chevy_volt.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chevy_volt.jpg; sourceTree = "<group>"; };
+		AD556698178C673900D7C926 /* mini_clubman.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mini_clubman.jpg; sourceTree = "<group>"; };
+		AD556699178C673900D7C926 /* smart_fortwo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = smart_fortwo.jpg; sourceTree = "<group>"; };
+		AD55669A178C673900D7C926 /* toyota_venza.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = toyota_venza.jpg; sourceTree = "<group>"; };
+		AD55669B178C673900D7C926 /* volvo_s60.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = volvo_s60.jpg; sourceTree = "<group>"; };
+		AD5566A2178C7AFF00D7C926 /* CarDetailTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CarDetailTableViewController.h; sourceTree = "<group>"; };
+		AD5566A3178C7AFF00D7C926 /* CarDetailTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CarDetailTableViewController.m; sourceTree = "<group>"; };
+		AD5A698A178C623600684488 /* CarsTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CarsTableCell.h; sourceTree = "<group>"; };
+		AD5A698B178C623600684488 /* CarsTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CarsTableCell.m; sourceTree = "<group>"; };
+		EF4003A6178C523E001F62DD /* CarsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CarsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF4003A9178C523E001F62DD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		EF4003AB178C523E001F62DD /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		EF4003AD178C523E001F62DD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		EF4003B1178C523E001F62DD /* CarsApp-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CarsApp-Info.plist"; sourceTree = "<group>"; };
+		EF4003B3178C523E001F62DD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		EF4003B5178C523E001F62DD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EF4003B7178C523E001F62DD /* CarsApp-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CarsApp-Prefix.pch"; sourceTree = "<group>"; };
+		EF4003B8178C523E001F62DD /* CarsAppAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CarsAppAppDelegate.h; sourceTree = "<group>"; };
+		EF4003B9178C523E001F62DD /* CarsAppAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CarsAppAppDelegate.m; sourceTree = "<group>"; };
+		EF4003BC178C523E001F62DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EF4003C1178C523E001F62DD /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		EF4003C7178C523E001F62DD /* CarsAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CarsAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF4003C8178C523E001F62DD /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		EF4003D0178C523E001F62DD /* CarsAppTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CarsAppTests-Info.plist"; sourceTree = "<group>"; };
+		EF4003D2178C523E001F62DD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		EF4003D4178C523E001F62DD /* CarsAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CarsAppTests.m; sourceTree = "<group>"; };
+		EF4003DE178C5857001F62DD /* display-mac32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "display-mac32.png"; sourceTree = "<group>"; };
+		EF4003DF178C5857001F62DD /* home32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home32.png; sourceTree = "<group>"; };
+		EF4003E0178C5857001F62DD /* thumbnails32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = thumbnails32.png; sourceTree = "<group>"; };
+		EF4003E1178C5857001F62DD /* unfold-multiple32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "unfold-multiple32.png"; sourceTree = "<group>"; };
+		EF4003E6178C59CB001F62DD /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		EF4003E7178C59CB001F62DD /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		EF4003EB178C5A1B001F62DD /* CarsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CarsTableViewController.h; sourceTree = "<group>"; };
+		EF4003EC178C5A1B001F62DD /* CarsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CarsTableViewController.m; sourceTree = "<group>"; };
+		EF4003EE178C5A59001F62DD /* CarsMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CarsMapViewController.h; sourceTree = "<group>"; };
+		EF4003EF178C5A59001F62DD /* CarsMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CarsMapViewController.m; sourceTree = "<group>"; };
+		EF4003F1178C5A70001F62DD /* CarsPhotosViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CarsPhotosViewController.h; sourceTree = "<group>"; };
+		EF4003F2178C5A70001F62DD /* CarsPhotosViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CarsPhotosViewController.m; sourceTree = "<group>"; };
+		EF4003F4178C5A8B001F62DD /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
+		EF4003F5178C5A8B001F62DD /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EF4003A3178C523E001F62DD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD4AC080178E0F7800393C59 /* AddressBook.framework in Frameworks */,
+				AD4AC07E178E0F6900393C59 /* MapKit.framework in Frameworks */,
+				EF4003AC178C523E001F62DD /* CoreGraphics.framework in Frameworks */,
+				EF4003AE178C523E001F62DD /* UIKit.framework in Frameworks */,
+				EF4003AA178C523E001F62DD /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF4003C4178C523E001F62DD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF4003C9178C523E001F62DD /* XCTest.framework in Frameworks */,
+				EF4003CB178C523E001F62DD /* UIKit.framework in Frameworks */,
+				EF4003CA178C523E001F62DD /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AD5566A1178C673D00D7C926 /* CarPhotos */ = {
+			isa = PBXGroup;
+			children = (
+				AD556697178C673900D7C926 /* chevy_volt.jpg */,
+				AD556698178C673900D7C926 /* mini_clubman.jpg */,
+				AD556699178C673900D7C926 /* smart_fortwo.jpg */,
+				AD55669A178C673900D7C926 /* toyota_venza.jpg */,
+				AD55669B178C673900D7C926 /* volvo_s60.jpg */,
+			);
+			name = CarPhotos;
+			sourceTree = "<group>";
+		};
+		AD5A698D178C623F00684488 /* FirstTab */ = {
+			isa = PBXGroup;
+			children = (
+				AD5566A1178C673D00D7C926 /* CarPhotos */,
+				EF4003EB178C5A1B001F62DD /* CarsTableViewController.h */,
+				EF4003EC178C5A1B001F62DD /* CarsTableViewController.m */,
+				AD5A698A178C623600684488 /* CarsTableCell.h */,
+				AD5A698B178C623600684488 /* CarsTableCell.m */,
+				AD5566A2178C7AFF00D7C926 /* CarDetailTableViewController.h */,
+				AD5566A3178C7AFF00D7C926 /* CarDetailTableViewController.m */,
+			);
+			name = FirstTab;
+			sourceTree = "<group>";
+		};
+		AD5A698E178C625500684488 /* SecondTab */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = SecondTab;
+			sourceTree = "<group>";
+		};
+		EF40039D178C523D001F62DD = {
+			isa = PBXGroup;
+			children = (
+				EF4003AF178C523E001F62DD /* CarsApp */,
+				EF4003CE178C523E001F62DD /* CarsAppTests */,
+				EF4003A8178C523E001F62DD /* Frameworks */,
+				EF4003A7178C523E001F62DD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EF4003A7178C523E001F62DD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EF4003A6178C523E001F62DD /* CarsApp.app */,
+				EF4003C7178C523E001F62DD /* CarsAppTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EF4003A8178C523E001F62DD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AD4AC07F178E0F7800393C59 /* AddressBook.framework */,
+				AD4AC07D178E0F6900393C59 /* MapKit.framework */,
+				EF4003A9178C523E001F62DD /* Foundation.framework */,
+				EF4003AB178C523E001F62DD /* CoreGraphics.framework */,
+				EF4003AD178C523E001F62DD /* UIKit.framework */,
+				EF4003C8178C523E001F62DD /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EF4003AF178C523E001F62DD /* CarsApp */ = {
+			isa = PBXGroup;
+			children = (
+				EF4003B8178C523E001F62DD /* CarsAppAppDelegate.h */,
+				EF4003B9178C523E001F62DD /* CarsAppAppDelegate.m */,
+				EF4003BB178C523E001F62DD /* Main.storyboard */,
+				EF4003E6178C59CB001F62DD /* LoginViewController.h */,
+				EF4003E7178C59CB001F62DD /* LoginViewController.m */,
+				EF4003F7178C5C18001F62DD /* TabBarClasses */,
+				EF4003C1178C523E001F62DD /* Images.xcassets */,
+				EF4003B0178C523E001F62DD /* Supporting Files */,
+			);
+			path = CarsApp;
+			sourceTree = "<group>";
+		};
+		EF4003B0178C523E001F62DD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EF4003DE178C5857001F62DD /* display-mac32.png */,
+				EF4003DF178C5857001F62DD /* home32.png */,
+				EF4003E0178C5857001F62DD /* thumbnails32.png */,
+				EF4003E1178C5857001F62DD /* unfold-multiple32.png */,
+				EF4003B1178C523E001F62DD /* CarsApp-Info.plist */,
+				EF4003B2178C523E001F62DD /* InfoPlist.strings */,
+				EF4003B5178C523E001F62DD /* main.m */,
+				EF4003B7178C523E001F62DD /* CarsApp-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EF4003CE178C523E001F62DD /* CarsAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				EF4003D4178C523E001F62DD /* CarsAppTests.m */,
+				EF4003CF178C523E001F62DD /* Supporting Files */,
+			);
+			path = CarsAppTests;
+			sourceTree = "<group>";
+		};
+		EF4003CF178C523E001F62DD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EF4003D0178C523E001F62DD /* CarsAppTests-Info.plist */,
+				EF4003D1178C523E001F62DD /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EF4003F7178C5C18001F62DD /* TabBarClasses */ = {
+			isa = PBXGroup;
+			children = (
+				AD5A698D178C623F00684488 /* FirstTab */,
+				AD5A698E178C625500684488 /* SecondTab */,
+				EF4003EE178C5A59001F62DD /* CarsMapViewController.h */,
+				EF4003EF178C5A59001F62DD /* CarsMapViewController.m */,
+				EF4003F1178C5A70001F62DD /* CarsPhotosViewController.h */,
+				EF4003F2178C5A70001F62DD /* CarsPhotosViewController.m */,
+				EF4003F4178C5A8B001F62DD /* SettingsViewController.h */,
+				EF4003F5178C5A8B001F62DD /* SettingsViewController.m */,
+			);
+			name = TabBarClasses;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EF4003A5178C523E001F62DD /* CarsApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF4003D8178C523E001F62DD /* Build configuration list for PBXNativeTarget "CarsApp" */;
+			buildPhases = (
+				EF4003A2178C523E001F62DD /* Sources */,
+				EF4003A3178C523E001F62DD /* Frameworks */,
+				EF4003A4178C523E001F62DD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CarsApp;
+			productName = CarsApp;
+			productReference = EF4003A6178C523E001F62DD /* CarsApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EF4003C6178C523E001F62DD /* CarsAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF4003DB178C523E001F62DD /* Build configuration list for PBXNativeTarget "CarsAppTests" */;
+			buildPhases = (
+				EF4003C3178C523E001F62DD /* Sources */,
+				EF4003C4178C523E001F62DD /* Frameworks */,
+				EF4003C5178C523E001F62DD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EF4003CD178C523E001F62DD /* PBXTargetDependency */,
+			);
+			name = CarsAppTests;
+			productName = CarsAppTests;
+			productReference = EF4003C7178C523E001F62DD /* CarsAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EF40039E178C523E001F62DD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = CarsApp;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = code3e;
+				TargetAttributes = {
+					EF4003C6178C523E001F62DD = {
+						TestTargetID = EF4003A5178C523E001F62DD;
+					};
+				};
+			};
+			buildConfigurationList = EF4003A1178C523E001F62DD /* Build configuration list for PBXProject "CarsApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EF40039D178C523D001F62DD;
+			productRefGroup = EF4003A7178C523E001F62DD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EF4003A5178C523E001F62DD /* CarsApp */,
+				EF4003C6178C523E001F62DD /* CarsAppTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EF4003A4178C523E001F62DD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD55669D178C673900D7C926 /* mini_clubman.jpg in Resources */,
+				AD55669C178C673900D7C926 /* chevy_volt.jpg in Resources */,
+				AD55669E178C673900D7C926 /* smart_fortwo.jpg in Resources */,
+				EF4003C2178C523E001F62DD /* Images.xcassets in Resources */,
+				EF4003E2178C5857001F62DD /* display-mac32.png in Resources */,
+				EF4003B4178C523E001F62DD /* InfoPlist.strings in Resources */,
+				AD5566A0178C673900D7C926 /* volvo_s60.jpg in Resources */,
+				EF4003E3178C5857001F62DD /* home32.png in Resources */,
+				AD55669F178C673900D7C926 /* toyota_venza.jpg in Resources */,
+				EF4003BD178C523E001F62DD /* Main.storyboard in Resources */,
+				EF4003E5178C5857001F62DD /* unfold-multiple32.png in Resources */,
+				EF4003E4178C5857001F62DD /* thumbnails32.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF4003C5178C523E001F62DD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF4003D3178C523E001F62DD /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EF4003A2178C523E001F62DD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF4003ED178C5A1B001F62DD /* CarsTableViewController.m in Sources */,
+				EF4003B6178C523E001F62DD /* main.m in Sources */,
+				EF4003F3178C5A70001F62DD /* CarsPhotosViewController.m in Sources */,
+				AD5566A4178C7AFF00D7C926 /* CarDetailTableViewController.m in Sources */,
+				AD5A698C178C623600684488 /* CarsTableCell.m in Sources */,
+				EF4003BA178C523E001F62DD /* CarsAppAppDelegate.m in Sources */,
+				EF4003F0178C5A59001F62DD /* CarsMapViewController.m in Sources */,
+				EF4003E8178C59CB001F62DD /* LoginViewController.m in Sources */,
+				EF4003F6178C5A8B001F62DD /* SettingsViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF4003C3178C523E001F62DD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF4003D5178C523E001F62DD /* CarsAppTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EF4003CD178C523E001F62DD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EF4003A5178C523E001F62DD /* CarsApp */;
+			targetProxy = EF4003CC178C523E001F62DD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EF4003B2178C523E001F62DD /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF4003B3178C523E001F62DD /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		EF4003BB178C523E001F62DD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF4003BC178C523E001F62DD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EF4003D1178C523E001F62DD /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF4003D2178C523E001F62DD /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EF4003D6178C523E001F62DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		EF4003D7178C523E001F62DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EF4003D9178C523E001F62DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Raymundo Porchas (6PYY3H36VV)";
+				"CODE_SIGN_IDENTITY[sdk=*]" = "iPhone Developer: Raymundo Porchas (6PYY3H36VV)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Raymundo Porchas (6PYY3H36VV)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CarsApp/CarsApp-Prefix.pch";
+				INFOPLIST_FILE = "CarsApp/CarsApp-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "9CB986D9-D232-4AB3-8758-8A29B8B968BA";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "9CB986D9-D232-4AB3-8758-8A29B8B968BA";
+				SDKROOT = iphoneos7.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		EF4003DA178C523E001F62DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CarsApp/CarsApp-Prefix.pch";
+				INFOPLIST_FILE = "CarsApp/CarsApp-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos7.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		EF4003DC178C523E001F62DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/CarsApp.app/CarsApp";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(SYSTEM_APPS_DIR)/Xcode5-DP2.app/Contents/Developer/Library/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CarsApp/CarsApp-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "CarsAppTests/CarsAppTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		EF4003DD178C523E001F62DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/CarsApp.app/CarsApp";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(SYSTEM_APPS_DIR)/Xcode5-DP2.app/Contents/Developer/Library/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CarsApp/CarsApp-Prefix.pch";
+				INFOPLIST_FILE = "CarsAppTests/CarsAppTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EF4003A1178C523E001F62DD /* Build configuration list for PBXProject "CarsApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF4003D6178C523E001F62DD /* Debug */,
+				EF4003D7178C523E001F62DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF4003D8178C523E001F62DD /* Build configuration list for PBXNativeTarget "CarsApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF4003D9178C523E001F62DD /* Debug */,
+				EF4003DA178C523E001F62DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF4003DB178C523E001F62DD /* Build configuration list for PBXNativeTarget "CarsAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF4003DC178C523E001F62DD /* Debug */,
+				EF4003DD178C523E001F62DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EF40039E178C523E001F62DD /* Project object */;
+}
